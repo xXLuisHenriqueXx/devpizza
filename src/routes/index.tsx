@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 w-full h-dvh px-4">
-      <Navbar screen="menu" />
+      <Navbar screen="home" />
 
       <section className="flex flex-col items-center gap-y-12 w-full max-w-xl">
         <Header />

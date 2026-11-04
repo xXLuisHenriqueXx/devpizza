@@ -10,7 +10,6 @@ function CountBadge({ count, className }: Props) {
 
   return (
     <span
-      // key força remontar a cada mudança e reexecutar a animação de "pop"
       key={count}
       role="status"
       className={cn(

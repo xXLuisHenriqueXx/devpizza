@@ -112,7 +112,6 @@ export const useCart = create<CartState>()(
         }));
       },
 
-      // esvazia os itens e as observações do pedido; o endereço é mantido
       clearCart: () => set({ items: [], notes: "" }),
 
       setAddress: (address) =>
@@ -136,8 +135,6 @@ export const useCart = create<CartState>()(
   ),
 );
 
-
-/** Quantidade total (somando variações) de um produto no carrinho. */
 export const useProductQuantity = (
   category: string,
   productId: string | number,
@@ -152,7 +149,6 @@ export const useProductQuantity = (
     ),
   );
 
-/** Quantidade total de unidades no carrinho. */
 export const useCartTotalItems = () =>
   useCart((state) =>
     state.items.reduce((total, item) => total + item.quantity, 0),

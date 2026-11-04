@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 import Logo from "@/assets/logo.png";
 import { Card } from "./ui/card";
 import { CountBadge } from "./ui/count-badge";
-import { CartModal } from "./CartModal";
+import { CartModal } from "../routes/menu/-components/CartModal";
 
 import { useCartTotalItems } from "@/routes/menu/-hooks/useCart";
 
